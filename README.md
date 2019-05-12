@@ -9,4 +9,4 @@ In the project directory, you can run:
 ### `npm i`
 ### `npm run dev`
 
-![Image](https://github.com/jon/coolproject/raw/master/image/image.png)
+![Image](https://github.com/devanonymous/electron-react-todo-app/blob/master/public/scrinshot.png)
