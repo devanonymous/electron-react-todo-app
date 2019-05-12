@@ -24,7 +24,7 @@ const TodoListItem = memo(({todo, onDeleteButtonClick}) => {
             <ListItem divider={true}>
                 <Checkbox
                       onClick={onCheckBoxToggle(isCompleted, setIsCompleted, todo.id)}
-                      checked={todo.isCompleted}
+                      checked={isCompleted}
                     disableRipple
                 />
                 <ListItemText style={isCompleted ? {textDecoration: "line-through"} : {textDecoration: "none"}} primary={todo.text}/>
