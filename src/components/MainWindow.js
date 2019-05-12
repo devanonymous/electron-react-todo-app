@@ -18,7 +18,6 @@ const style = theme => ({
 });
 
 const MainWindow = props => {
-    /*TODO:*/
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
@@ -29,7 +28,6 @@ const MainWindow = props => {
         });
         ipcRenderer.on("todo:add", (event, data) => {
             setTodos(oldTodos => [...oldTodos, data]);
-            // console.log(newTodos, 'NEEEEEEEEEWWWWWWWW!!!!!!!!!!', todos, data)
         });
         ipcRenderer.on("todo:clear", event => {
             setTodos([]);

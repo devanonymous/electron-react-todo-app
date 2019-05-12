@@ -12,7 +12,6 @@ import DeleteOutlined from '@material-ui/icons/DeleteOutlined';
 const { ipcRenderer } = window.require("electron");
 
 const onCheckBoxToggle = (isCompleted, setIsCompleted, id) => () => {
-    console.log('isCompleted', isCompleted);
     setIsCompleted(!isCompleted);
     ipcRenderer.send("todo:changeIsCompleted", {id, isCompleted: !isCompleted});
 };
