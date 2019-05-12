@@ -8,3 +8,5 @@ In the project directory, you can run:
 
 ### `npm i`
 ### `npm run dev`
+
+![Image](https://github.com/jon/coolproject/raw/master/image/image.png)
